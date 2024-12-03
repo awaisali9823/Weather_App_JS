@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script
+      src="https://kit.fontawesome.com/cf6abf5675.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <header class="input-container">
+        <input type="text" placeholder="Search City" class="city-input" />
+        <button class="search-btn">
+          <!-- <i class="fas fa-search"></i> -->
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </header>
+      <section class="weather-info" style="display: none">
+        <div class="location-container">
+          <div class="location">
+            <!-- <i class="fas fa-map-marker-alt"></i> -->
+            <i class="fa-solid fa-location-dot"></i>
+            <h4 class="country-text">Jakarta</h4>
+          </div>
+          <h5 class="current-date">Wed, 25 Nov</h5>
+        </div>
+        <div class="weather-summary-container">
+          <img class="weather-img" src="/assets/weather/clouds.svg" alt="" />
+          <div class="weather-summary-info">
+            <h1 class="temp-text">29 °C</h1>
+            <h1 class="condition-text">Clouds</h1>
+          </div>
+        </div>
+        <div class="weather-conditions-container">
+          <div class="condition-info">
+            <i class="fa-solid fa-droplet"></i>
+            <div class="condition-item">
+              <h5 class="regular-text">Humidity</h5>
+              <h5 class="humidity-text">55%</h5>
+            </div>
+          </div>
+          <div class="condition-info">
+            <i class="fa-solid fa-wind"></i>
+            <div class="condition-item">
+              <h5 class="regular-text">Wind Speed</h5>
+              <h5 class="wind-text">3 km/h</h5>
+            </div>
+          </div>
+        </div>
+        <div class="forecast-container">
+          <div class="forecast-info">
+            <h5 class="forecast-info-date regular-text">1 Dec, 2024</h5>
+            <img src="assets/weather/thunderstorm.svg" alt="" />
+            <h5 class="forecast-info-temp">29 °C</h5>
+          </div>
+          <div class="forecast-info">
+            <h5 class="forecast-info-date regular-text">1 Dec, 2024</h5>
+            <img src="assets/weather/thunderstorm.svg" alt="" />
+            <h5 class="forecast-info-temp">29 °C</h5>
+          </div>
+          <div class="forecast-info">
+            <h5 class="forecast-info-date regular-text">1 Dec, 2024</h5>
+            <img src="assets/weather/thunderstorm.svg" alt="" />
+            <h5 class="forecast-info-temp">29 °C</h5>
+          </div>
+          <div class="forecast-info">
+            <h5 class="forecast-info-date regular-text">1 Dec, 2024</h5>
+            <img src="assets/weather/thunderstorm.svg" alt="" />
+            <h5 class="forecast-info-temp">29 °C</h5>
+          </div>
+        </div>
+      </section>
+      <section class="search-city city-searched section-message">
+        <img class="search-img" src="assets/message/search-city.png" alt="" />
+        <div>
+          <h1>Search City</h1>
+          <h4 class="regular-text">
+            Find out the weather conditions of the city
+          </h4>
+        </div>
+      </section>
+      <section
+        class="search-city not-found section-message"
+        style="display: none"
+      >
+        <img class="search-img" src="assets/message/not-found.png" alt="" />
+        <div>
+          <h1>Search City</h1>
+          <h4 class="regular-text">
+            Find out the weather conditions of the city
+          </h4>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
